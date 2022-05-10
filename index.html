@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio Website.</title>     
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+                background-color: #000;
+                color: white;
+            }
+
+            a{
+                text-decoration: none;   
+            }
+
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 30px 100px;
+            }
+
+            nav ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 10px 70px;
+            }
+
+            nav ul li a{
+                color: #fff;
+                position: relative;
+                padding: 5px 0;
+            }
+
+            nav ul li a:hover{
+                color: #0ff;
+            }
+
+            nav ul li a:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background: #0ff;
+                transition: .3s;
+                bottom: 0;
+            }
+
+            nav ul li a:hover:after{
+                width: 100%;
+            }
+
+            .btn{
+                color: #000;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                padding: 16px 40px;
+                border-radius: 500px;
+                display: inline-block;
+                font-weight: 500;
+                transition: a11 .4s ease-in-out;
+                background-size: 152% 100%;
+                background: #0ff;
+                border: 2px solid #0ff;
+                font-weight: bold;
+            }
+            
+            .btn:hover{
+                background: transparent;
+                font-weight: bold;
+                border-color: #0ff;
+                color: #0ff;
+            }
+
+            #home{
+                display: flex;
+                flex-direction: column;
+            }
+
+            #home:before{
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 900px;
+                width: 100%;
+            }
+
+            #about p{
+                text-align: right;
+            }
+
+            .form{
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                align-items: center;
+                margin: 20px 0px;
+            }
+            .input{
+                padding: 12px;
+                margin: 15px;
+                width: 30%;
+                border:none;
+                outline: none;
+            }
+
+            .btn1{
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                padding: 16px 40px;
+                border-radius: 500px;
+                display: inline-block;
+                font-weight: 500;
+                transition: a11 .4s ease-in-out;
+                background-size: 152% 100%;
+                background: #000;
+                border: 2px solid #000;
+                font-weight: bold;
+            }
+            
+            .btn1:hover{
+                background: transparent;
+                border-color: #000;
+                color: #000;
+                font-weight: bold;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="btn">Hire Me</a>
+            </nav>
+
+            <section id="home">
+                <div class="main">
+                    <center>
+                        <img src="MyPic11.png" alt="" width="250px" height="250px">
+                        <br> <h1 style="color: #0ff;" class="heading">I  AM KARNAM SHYAM <br> </h1>
+                        <h2>STUDENT OF VIT AP UNIVERSITY.</h2> <br>
+                        <br> <button href="" class="btn">Download cv</button>
+                    </center>
+                </div>
+            </section>
+                
+            <section id="about">
+                <center>
+                    <div>
+                        <br> <br> <h1 class="heading"> <u>About Me</u> </h1>
+                        <br> I am from Vizag, Andhara Pradesh. <br>
+                        Currently I am pursuing Integrated MTech in CSE at VIT-AP University. <br> 
+                        I secured 961 marks in 12th grade from APBIE (Andhra Pradesh Board of Intermediate Education) in the year of 2021. <br>
+                        And I secured 448 marks in 10th grade from CBSE (Center Board of Secondary Education) in the year of 2019. <br>
+                        i got 9047 rank in AP EAPCET 2021. <br>
+                    </div>
+                </center>
+            </section>
+            
+            <section id="skills">
+                <center>
+                    <div>
+                        <br> <br> <h1 class="heading"><u> MY SKILLS</u> <br> </h1>
+                        
+                        <ul style="text-decoration: none;">
+                            <li>C Language </li>
+                            <li>Python </li>
+                            <li>Core Java</li>
+                            <li>HTML5 </li>
+                            <li>CSS 3 </li>
+                            <li>MS office</li>
+                            <li>MS Word </li>
+                            <li>MS PowerPoint</li>
+                        </ul>
+                    </div>
+                </center>
+            </section>
+            
+            <section id="contact">
+                <center>
+                    <div>
+                        <form class="form">
+                            <br> <br> <h1 class="heading">  CONTACT ME  <br> </h1>
+                            <input type="text" name="name" class="input" placeholder="Phone number : 111 22 111 22">
+                            <input type="email" name="email" class="input" placeholder="E-Mail : myemail@mail.com">
+                            <button class="btn1">send</button>
+                        </form>
+                    </div>
+                </center>
+            </section>
+
+    </body>
+</html>
